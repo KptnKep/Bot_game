@@ -26,6 +26,7 @@ async def main():
     config: Config = load_config()
     
     # Инициализируем бот и диспетчер
+
     bot = Bot(
         token=config.tg_bot.token,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML)
